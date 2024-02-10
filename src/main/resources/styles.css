@@ -26,5 +26,9 @@
   minHeight:"300";
   maxWidth:"200" ;
   -fx-wrap-text: "true";
-  /* Add padding if necessary to adjust text position */
+
+  -fx-border-color: white; /* Set border color */
+  -fx-border-width: 2; /* Set border width */
+  -fx-padding: 10px;
+  /* Add padding if necessary to adjust text position  */
 }

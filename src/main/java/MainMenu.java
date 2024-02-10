@@ -9,6 +9,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
+import javafx.scene.control.Alert;
 
 import java.net.URL;
 import java.util.Objects;
@@ -53,19 +54,8 @@ public class MainMenu implements Initializable {
             e.printStackTrace();
             System.out.println("Issues switching to Main Page scene");
         }
-        /*else
-        {
-            try {
-                root = FXMLLoader.load(Objects.requireNonNull(LoadScreen.class.getResource("LoadScreen.fxml")));
-                stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
-                scene = new Scene(root, 700, 500);
-                stage.setScene(scene);
-                stage.show();
-            } catch (Exception e) {
-                e.printStackTrace();
-                System.out.println("Issues switching to LoadScreen scene");
-            }
-        }*/
+
+
     }
 
     @FXML
@@ -73,4 +63,6 @@ public class MainMenu implements Initializable {
         Platform.exit();
         System.exit(0);
     }
+
+
 }
