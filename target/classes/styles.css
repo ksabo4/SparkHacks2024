@@ -19,3 +19,12 @@
   -fx-font-size: 26px;
   font-size: 26;
 }
+
+.button-large {
+  -fx-font-size: 20px; /* Increase font size */
+  -fx-alignment: center; /* Center text alignment */
+  minHeight:"300";
+  maxWidth:"200" ;
+  -fx-wrap-text: "true";
+  /* Add padding if necessary to adjust text position */
+}

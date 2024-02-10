@@ -17,7 +17,8 @@
 <SplitPane xmlns="http://javafx.com/javafx/8.0.171"
            xmlns:fx="http://javafx.com/fxml/1"
            dividerPositions="0.33"
-           fx:controller="ScreenController">
+           fx:controller="ScreenController"
+           styleClass="styles.css">
     <!-- Displays Player Information -->
     <VBox alignment="TOP_CENTER">
         <Label text="You">
@@ -50,16 +51,23 @@
         </padding>
     </VBox>
     <!-- Displays Game Information -->
-  <GridPane fx:id="gameGrid" hgap="10" vgap="10">
-        <padding>
-            <Insets top="20" right="20" bottom="20" left="20"/>
-        </padding>
-        <!-- Define the 2x3 grid of buttons -->
-        <Button text="Button 1" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
-        <Button text="Button 2" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
-        <Button text="Button 3" GridPane.rowIndex="0" GridPane.columnIndex="2"/>
-        <Button text="Button 4" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
-        <Button text="Button 5" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
-        <Button text="Button 6" GridPane.rowIndex="1" GridPane.columnIndex="2"/>
-    </GridPane>
+<GridPane fx:id="gameGrid" hgap="10" vgap="10">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+    <!-- Define the 2x3 grid of buttons with increased size -->
+    <Button text="Invest 100$ into Google stock" GridPane.rowIndex="0" GridPane.columnIndex="0"
+            styleClass="button-large" />
+    <Button text="Buy a 5$ lottery ticket" GridPane.rowIndex="0" GridPane.columnIndex="1"
+            styleClass="button-large"/>
+    <Button text="Spend 1000$ on the latest iPhone" GridPane.rowIndex="1" GridPane.columnIndex="0"
+            styleClass="button-large" />
+    <Button text="Work 8 hours at McDonald's (Earn 90$, Happiness goes down)" GridPane.rowIndex="1" GridPane.columnIndex="1"
+            styleClass="button-large" />
+    <Button text="Gamble 100$ on a horse race" GridPane.rowIndex="2" GridPane.columnIndex="0"
+            styleClass="button-large" />
+    <Button text="Put 50$ birthday money from grandma into savings account" GridPane.rowIndex="2" GridPane.columnIndex="1"
+            styleClass="button-large"/>
+</GridPane>
+
 </SplitPane>
