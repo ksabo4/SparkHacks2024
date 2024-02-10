@@ -41,7 +41,36 @@
             <Separator/>
         </VBox>
 
-        <Label styleClass="panelSize" text="Money: "/>
+        <Label fx:id="moneyText" text="Money: $0">
+            <font>
+                <Font size="36.0"/>
+            </font>
+        </Label>
+        <Label fx:id="investmentText" text="Investments: $0">
+            <font>
+                <Font size="36.0"/>
+            </font>
+        </Label>
+        <Label fx:id="happinessText" text="Happiness: 50">
+            <font>
+                <Font size="36.0"/>
+            </font>
+        </Label>
+        <Label fx:id="ageText" text="Age: 18 Years">
+            <font>
+                <Font size="36.0"/>
+            </font>
+        </Label>
+        <Label fx:id="incomeText" text="Income: ">
+            <font>
+                <Font size="36.0"/>
+            </font>
+        </Label>
+        <Label fx:id="goalText" text="Goal: $100,000">
+            <font>
+                <Font size="36.0"/>
+            </font>
+        </Label>
 
         <padding>
             <Insets bottom="20.0"
@@ -57,17 +86,23 @@
     </padding>
     <!-- Define the 2x3 grid of buttons with increased size -->
     <Button text="Invest 100$ into Google stock" GridPane.rowIndex="0" GridPane.columnIndex="0"
-            styleClass="button-large" />
+            styleClass="button-large" onAction="#buttonPressed" userData="1"/>
     <Button text="Buy a 5$ lottery ticket" GridPane.rowIndex="0" GridPane.columnIndex="1"
-            styleClass="button-large"/>
+            styleClass="button-large" onAction="#buttonPressed" userData="2"/>
     <Button text="Spend 1000$ on the latest iPhone" GridPane.rowIndex="1" GridPane.columnIndex="0"
-            styleClass="button-large" />
+            styleClass="button-large" onAction="#buttonPressed" userData="3"/>
     <Button text="Work 8 hours at McDonald's (Earn 90$, Happiness goes down)" GridPane.rowIndex="1" GridPane.columnIndex="1"
-            styleClass="button-large" />
+            styleClass="button-large" onAction="#buttonPressed" userData="4"/>
     <Button text="Gamble 100$ on a horse race" GridPane.rowIndex="2" GridPane.columnIndex="0"
-            styleClass="button-large" />
+            styleClass="button-large" onAction="#buttonPressed" userData="5"/>
     <Button text="Put 50$ birthday money from grandma into savings account" GridPane.rowIndex="2" GridPane.columnIndex="1"
-            styleClass="button-large"/>
+            styleClass="button-large" onAction="#buttonPressed" userData="6"/>
+    <Button text="Progress to the next year" GridPane.rowIndex="3" GridPane.columnIndex="0"
+            styleClass="button-large" onAction="#buttonPressed" userData="7"/>
+    <Button text="Withdraw $1000 of investments" GridPane.rowIndex="3" GridPane.columnIndex="1"
+            styleClass="button-large" onAction="#buttonPressed" userData="8"/>
+            <Button text="Withdraw $1000 from your bank account" GridPane.rowIndex="4" GridPane.columnIndex="1"
+            styleClass="button-large" onAction="#buttonPressed" userData="9"/>
 </GridPane>
 
 </SplitPane>
