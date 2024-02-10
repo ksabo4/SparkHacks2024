@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.Separator?>
+
+
+<SplitPane xmlns="http://javafx.com/javafx/8.0.171"
+           xmlns:fx="http://javafx.com/fxml/1"
+           dividerPositions="0.33"
+           fx:controller="ScreenController">
+    <!-- Displays Player Information -->
+    <VBox alignment="TOP_CENTER">
+        <Label text="You">
+            <font>
+                <Font size="36.0"/>
+            </font>
+        </Label>
+
+        <ImageView pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@neutral-face.png"/>
+            </image>
+        </ImageView>
+
+        <VBox>
+            <padding>
+                <Insets top="20.0" bottom="20.0" />
+            </padding>
+            <Separator/>
+        </VBox>
+
+        <Label styleClass="panelSize" text="Money: "/>
+
+        <padding>
+            <Insets bottom="20.0"
+                    left="20.0"
+                    right="20.0"
+                    top="20.0" />
+        </padding>
+    </VBox>
+    <!-- Displays Game Information -->
+    <VBox>
+        <Label fx:id="gameText"
+               text="Hello World">
+            <font>
+                <Font size="24.0"/>
+            </font>
+        </Label>
+        <Button text="Press me!"
+                onAction="#gameText"/>
+
+        <padding>
+            <Insets bottom="20.0"
+                    left="20.0"
+                    right="20.0"
+                    top="20.0" />
+        </padding>
+    </VBox>
+</SplitPane>

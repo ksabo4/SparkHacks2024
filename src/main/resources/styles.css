@@ -1,0 +1,21 @@
+/* styles.css */
+.root {
+  -fx-background-color: #333333; /* Dark gray background */
+  background-color: #333333; /* For compatibility */
+}
+
+.label {
+  -fx-text-fill: white; /* White text color */
+}
+
+* {
+  -fx-background-color: #333333; /* Dark gray background */
+  background-color: #333333; /* For compatibility */
+  -fx-font-family: 'serif';
+  font-family: 'serif';
+  -fx-text-fill: white;
+}
+.panelSize {
+  -fx-font-size: 26px;
+  font-size: 26;
+}
