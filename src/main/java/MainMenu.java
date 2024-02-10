@@ -6,6 +6,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
@@ -54,8 +55,19 @@ public class MainMenu implements Initializable {
             e.printStackTrace();
             System.out.println("Issues switching to Main Page scene");
         }
-
-
+        /*else
+        {
+            try {
+                root = FXMLLoader.load(Objects.requireNonNull(LoadScreen.class.getResource("LoadScreen.fxml")));
+                stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+                scene = new Scene(root, 700, 500);
+                stage.setScene(scene);
+                stage.show();
+            } catch (Exception e) {
+                e.printStackTrace();
+                System.out.println("Issues switching to LoadScreen scene");
+            }
+        }*/
     }
 
     @FXML
