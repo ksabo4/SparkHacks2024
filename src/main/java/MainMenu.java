@@ -6,6 +6,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
@@ -49,6 +50,14 @@ public class MainMenu implements Initializable {
             scene.getStylesheets().add(getClass().getResource("styles.css").toExternalForm());
             stage.setScene(scene);
             stage.show();
+
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Your goal");
+            alert.setHeaderText(null);
+            alert.setContentText("Your goal this run is to become a Astronaut (Net Worth > 100,000, Happiness > 90%");
+
+            // Display the alert and wait for the user to close it before continuing
+            alert.showAndWait();
         } catch (Exception e) {
             e.printStackTrace();
             System.out.println("Issues switching to Main Page scene");
@@ -66,6 +75,8 @@ public class MainMenu implements Initializable {
                 System.out.println("Issues switching to LoadScreen scene");
             }
         }*/
+
+
     }
 
     @FXML
